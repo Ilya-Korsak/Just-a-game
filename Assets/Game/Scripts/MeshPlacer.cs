@@ -5,30 +5,15 @@ using UnityEngine.InputSystem;
 
 public class MeshPlacer : MonoBehaviour
 {
-    public InputAction moveAction;
-    void Awake()
-    {
-        moveAction.performed += OnMove;
-    }
-
-    void OnEnable()
-    {
-        moveAction.Enable();
-    }
-
-    void OnDisable()
-    {
-        moveAction.Disable();
-    }
-	void OnMove(CallbackContext context){
-
-	}
-	void Update () {
-		Ray ray = new Ray (transform.position, Vector3.down);
+	public void OnMove(InputAction.CallbackContext context){
+		Vector2 inputVector = context.ReadValue<Vector2>();
+		Vector3 movementVectr = new Vector3(inputVector.x, 0, inputVector.y);
+		Ray ray = new Ray(transform.TransformPoint(movementVectr), -transform.up);
 		RaycastHit raycastHit;
-		if (Physics.Raycast (ray, out raycastHit)) {
+		if (Physics.Raycast(ray, out raycastHit))
+		{
 			transform.position = raycastHit.point;
-			transform.rotation = Quaternion.FromToRotation (Vector3.up, raycastHit.normal);
+			transform.rotation = Quaternion.FromToRotation(Vector3.up, raycastHit.normal);
 		}
 	}
 }
