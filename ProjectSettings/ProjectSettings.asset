@@ -157,6 +157,7 @@ PlayerSettings:
   applicationIdentifier:
     Android: korsak.testtask
     Standalone: com.UnityTechnologies.com.unity.template-starter-kit
+    iPhone: org.nativescript.m2demo
   buildNumber:
     Standalone: 0
     iPhone: 0

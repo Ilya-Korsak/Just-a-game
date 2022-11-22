@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class MeshPlacer : MonoBehaviour
 {
 	private Coroutine movingCoroutine;
-	private IEnumerator SmoothLerp(Vector2 direction)
+/*	private IEnumerator SmoothLerp(Vector2 direction)
 	{
 		Vector3 startingPos = transform.position;
 		Vector3 finalPos = transform.position + (transform.forward * 5);
@@ -18,7 +18,7 @@ public class MeshPlacer : MonoBehaviour
 			elapsedTime += Time.deltaTime;
 			yield return null;
 		}
-	}
+	}*/
 	public void OnMove(InputAction.CallbackContext context){
 		Vector2 inputVector = context.ReadValue<Vector2>();
 		Vector3 movementVectr = new Vector3(inputVector.x, 0, inputVector.y);
