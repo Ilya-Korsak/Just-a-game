@@ -1,0 +1,145 @@
+{
+    "m_SelectedDeviceId": "YT911000AV",
+    "m_SelectedPackage": {
+        "deviceId": "YT911000AV",
+        "name": "korsak.testtask",
+        "processId": 11090,
+        "exited": false
+    },
+    "m_SelectedPriority": 0,
+    "m_KnownPackagesForSerialization": [
+        {
+            "deviceId": "YT911000AV",
+            "name": "com.android.launcher3",
+            "processId": 3536,
+            "exited": false
+        },
+        {
+            "deviceId": "YT911000AV",
+            "name": "korsak.testtask",
+            "processId": 3433,
+            "exited": false
+        },
+        {
+            "deviceId": "YT911000AV",
+            "name": "korsak.testtask",
+            "processId": 4886,
+            "exited": false
+        },
+        {
+            "deviceId": "YT911000AV",
+            "name": "korsak.testtask",
+            "processId": 5354,
+            "exited": false
+        },
+        {
+            "deviceId": "YT911000AV",
+            "name": "korsak.testtask",
+            "processId": 5950,
+            "exited": false
+        },
+        {
+            "deviceId": "YT911000AV",
+            "name": "korsak.testtask",
+            "processId": 7311,
+            "exited": false
+        },
+        {
+            "deviceId": "YT911000AV",
+            "name": "korsak.testtask",
+            "processId": 7984,
+            "exited": false
+        },
+        {
+            "deviceId": "YT911000AV",
+            "name": "korsak.testtask",
+            "processId": 8301,
+            "exited": false
+        },
+        {
+            "deviceId": "YT911000AV",
+            "name": "korsak.testtask",
+            "processId": 8802,
+            "exited": false
+        },
+        {
+            "deviceId": "YT911000AV",
+            "name": "korsak.testtask",
+            "processId": 9906,
+            "exited": false
+        },
+        {
+            "deviceId": "YT911000AV",
+            "name": "korsak.testtask",
+            "processId": 11090,
+            "exited": false
+        }
+    ],
+    "m_Tags": {
+        "m_Entries": [
+            {
+                "m_Name": "Filter by all listed tags",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "No Filter",
+                "m_Selected": true
+            },
+            {
+                "m_Name": "",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "Tag Control...",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "Unity",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "CRASH",
+                "m_Selected": false
+            }
+        ]
+    },
+    "m_MemoryViewerState": {
+        "MemoryWindowHeight": 300.0,
+        "MemoryWindowWidth": 170.0,
+        "MemoryTypeEnabled": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+        ],
+        "MemoryGroup": 2,
+        "Behavior": 0
+    },
+    "m_FilterOptions": {
+        "m_Filter": "",
+        "m_UseRegularExpressions": false,
+        "m_MatchCase": false
+    },
+    "m_SymbolPaths": [],
+    "m_CaptureVideoSettings": {
+        "TimeLimitEnabled": false,
+        "TimeLimit": 180,
+        "VideoSizeEnabled": false,
+        "VideoSizeX": 1280,
+        "VideoSizeY": 720,
+        "BitRateEnabled": false,
+        "BitRateK": 20000,
+        "DisplayIdEnabled": false,
+        "DisplayId": ""
+    }
+}
