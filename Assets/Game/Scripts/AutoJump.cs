@@ -7,11 +7,17 @@ public class AutoJump : MonoBehaviour
     [SerializeField] private Rigidbody playerRigidBody;
     [SerializeField] private AnimationController animationController;
     private Coroutine animationCoroutine = null;
+    private SphereCharacterController sphereCharacterController;
+    private void Awake()
+    {
+        sphereCharacterController = playerRigidBody.GetComponent<SphereCharacterController>();
+    }
     IEnumerator AnimationCoroutine()
     {
-        yield return new WaitForSeconds(0.5f);
+        animationController.OnMove(MoovingType.JUMP);
+        yield return new WaitForSeconds(0.3f);
         playerRigidBody.AddForce(playerRigidBody.transform.up * 5, ForceMode.Impulse);
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.8f);
         animationController.CancelJump();
         animationCoroutine = null;
     }
@@ -20,18 +26,7 @@ public class AutoJump : MonoBehaviour
         if(collider.gameObject.tag== "Obstacle" && animationCoroutine==null)
         {
             Debug.Log(collider.gameObject.name);
-            animationController.OnMove(MoovingType.JUMP);
             animationCoroutine = StartCoroutine(AnimationCoroutine());
         }
     }
-   /* private void OnTriggerExit(Collider collider)
-    {
-        if (collider.gameObject.tag == "Obstacle" && animationCoroutine != null)
-        {
-            StopCoroutine(animationCoroutine);
-            animationController.CancelJump();
-            animationCoroutine =null;
-            Debug.Log(collider.gameObject.name);
-        }
-    }*/
 }

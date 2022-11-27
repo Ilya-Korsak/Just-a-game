@@ -54,12 +54,7 @@ public class AnimationController : MonoBehaviour
                 (transform.localPosition.x+direction.x)*5,
                 0,
                 (transform.localPosition.z+direction.y)*5);
-
             transform.localRotation = Quaternion.LookRotation(pointToLook);
-            /* Vector3 stickInput3 = new Vector3(direction.x, 0f, direction.y);
-             Vector3 axisOfRotation = Vector3.Cross(Vector3.up, stickInput3);
-             float angleOfRotation = 180f * Mathf.Min(1f, direction.magnitude);
-             transform.localRotation = Quaternion.AngleAxis(angleOfRotation, axisOfRotation);*/
         }
     }
 
