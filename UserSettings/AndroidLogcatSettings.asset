@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "YT911000AV",
         "name": "korsak.testtask",
-        "processId": 11090,
+        "processId": 9973,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -72,6 +72,18 @@
             "deviceId": "YT911000AV",
             "name": "korsak.testtask",
             "processId": 11090,
+            "exited": false
+        },
+        {
+            "deviceId": "YT911000AV",
+            "name": "korsak.testtask",
+            "processId": 10000,
+            "exited": false
+        },
+        {
+            "deviceId": "YT911000AV",
+            "name": "korsak.testtask",
+            "processId": 9973,
             "exited": false
         }
     ],
