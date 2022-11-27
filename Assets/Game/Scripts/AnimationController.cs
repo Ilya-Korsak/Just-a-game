@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -37,8 +38,12 @@ public class AnimationController : MonoBehaviour
                 {
                     animator.SetBool("isWalking", true);
                     animator.SetBool("isRuning", true);
-                }
-                break;
+                }break;
+            case MoovingType.JUMP:
+                {
+                    animator.SetLayerWeight(1, 0.8f);
+                    animator.SetTrigger("doJump");
+                }break;
         }
     }
     public void OnRotate(Vector2 direction)
@@ -56,5 +61,11 @@ public class AnimationController : MonoBehaviour
              float angleOfRotation = 180f * Mathf.Min(1f, direction.magnitude);
              transform.localRotation = Quaternion.AngleAxis(angleOfRotation, axisOfRotation);*/
         }
+    }
+
+    internal void CancelJump()
+    {
+        animator.ResetTrigger("doJump");
+        animator.SetLayerWeight(1, 0);
     }
 }
