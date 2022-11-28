@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.05995817, g: 0.04205385, b: 0.42122066, a: 1}
+  m_IndirectSpecularColor: {r: 0.07735576, g: 0.062844545, b: 0.48711613, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3703,7 +3703,7 @@ ParticleSystem:
   emitterVelocityMode: 0
   looping: 1
   prewarm: 1
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -8896,9 +8896,10 @@ GameObject:
   - component: {fileID: 1665138411}
   - component: {fileID: 1665138406}
   - component: {fileID: 1665138407}
+  - component: {fileID: 1665138412}
   m_Layer: 0
   m_Name: PlayerRig
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9074,6 +9075,20 @@ MonoBehaviour:
   animationController: {fileID: 1542942736}
   characterOverallSpeed: 1
   inputSpeedMultipler: 0
+--- !u!114 &1665138412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1665138400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30c97cbb469bd8c408d2030eb7ab6ef7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actionParticleSystem: {fileID: 1096302962}
+  actionDuration: 1
 --- !u!1001 &1869623517
 PrefabInstance:
   m_ObjectHideFlags: 0
