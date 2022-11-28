@@ -164,6 +164,7 @@ Library: lib_burst_generated
 --root-assembly=D:\GIT\Estoty-task\Temp\StagingArea\Data\Managed\Cinemachine.dll
 --root-assembly=D:\GIT\Estoty-task\Temp\StagingArea\Data\Managed\Unity.Services.Core.Environments.dll
 --root-assembly=D:\GIT\Estoty-task\Temp\StagingArea\Data\Managed\Unity.Services.Core.Internal.dll
+--root-assembly=D:\GIT\Estoty-task\Temp\StagingArea\Data\Managed\Assembly-CSharp.dll
 --root-assembly=D:\GIT\Estoty-task\Temp\StagingArea\Data\Managed\Unity.Timeline.dll
 --root-assembly=D:\GIT\Estoty-task\Temp\StagingArea\Data\Managed\Unity.Mathematics.dll
 --root-assembly=D:\GIT\Estoty-task\Temp\StagingArea\Data\Managed\Unity.Services.Core.Scheduler.dll
@@ -177,7 +178,6 @@ Library: lib_burst_generated
 --root-assembly=D:\GIT\Estoty-task\Temp\StagingArea\Data\Managed\Unity.Services.Core.Registration.dll
 --root-assembly=D:\GIT\Estoty-task\Temp\StagingArea\Data\Managed\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll
 --root-assembly=D:\GIT\Estoty-task\Temp\StagingArea\Data\Managed\Unity.RenderPipelines.Core.ShaderLibrary.dll
---root-assembly=D:\GIT\Estoty-task\Temp\StagingArea\Data\Managed\Assembly-CSharp.dll
 --root-assembly=D:\GIT\Estoty-task\Temp\StagingArea\Data\Managed\Unity.RenderPipelines.Universal.Shaders.dll
 --assembly-folder=D:\GIT\Estoty-task\Temp\StagingArea\Data\Managed\
 --pdb-search-paths=Temp/ManagedSymbols/
