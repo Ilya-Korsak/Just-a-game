@@ -36,6 +36,9 @@ public class GameManager : MonoBehaviour
         {
             playerControlsUI.gameObject.SetActive(false);
             finishWindow.gameObject.SetActive(true);
+            int minutes = Mathf.FloorToInt(Time.timeSinceLevelLoad / 60);
+            int seconds = Mathf.RoundToInt(Time.timeSinceLevelLoad) - 60*minutes;
+            timeText.text = minutes + ":" + seconds;
         }
     }
 
@@ -47,13 +50,13 @@ public class GameManager : MonoBehaviour
             throw new Exception();
         }
         List<int> usedSpawnersList = new List<int>();
-        int nextIndex = RandomRangeExcept(0, levelObjectSpawner.Length, usedSpawnersList);
-        while (nextIndex != -1)
+        int nextIndex = -2;
+        for(int i = 0; i < levelObjectSpawner.Length; i++)
         {
+            nextIndex = RandomRangeExcept(0, levelObjectSpawner.Length, usedSpawnersList);
             usedSpawnersList.Add(nextIndex);
             if (spawnedTorches.Count < torchCount)
             {
-                torchCount++;
                 TorchElement newTorchElement = levelObjectSpawner[nextIndex].SpawnTorch().GetComponent<TorchElement>();
                 newTorchElement.onTriggered += TorchActivated;
                 spawnedTorches.Add(newTorchElement);
@@ -64,7 +67,7 @@ public class GameManager : MonoBehaviour
             }
         }
     }
-
+    
     public static int RandomRangeExcept(int minVal, int maxVal, List<int> except = null)
     {
         IEnumerable<int> allowedRandomNumbers = Enumerable.Range(minVal, maxVal - minVal);
@@ -72,11 +75,12 @@ public class GameManager : MonoBehaviour
         {
             allowedRandomNumbers = allowedRandomNumbers.Except(except);
         }
-        if (allowedRandomNumbers.Count() == 0)
+        if (allowedRandomNumbers.Count() == -1)
         {
-            return -1;//When we out of random
+            return 0;//When we out of random
         }
         int randomIndex = UnityEngine.Random.Range(0, allowedRandomNumbers.Count());
+        
         return allowedRandomNumbers.ElementAt(randomIndex);
     }
 

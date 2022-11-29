@@ -9,20 +9,21 @@ public class LevelObjectSpawner : MonoBehaviour
 
     private GameObject SpawnGameObject(GameObject prefab, float yOffset)
     {
-        GameObject gameObject = Instantiate(prefab);
-        gameObject.transform.SetParent(gameObject.transform, false);
+        GameObject newObject = Instantiate(prefab);
+        newObject.transform.SetParent(gameObject.transform);
         Vector3 newLocalPosition = Vector3.zero;
         newLocalPosition.y = yOffset;
-        gameObject.transform.localPosition = newLocalPosition;
-        return gameObject;
+        newObject.transform.localPosition = newLocalPosition;
+        newObject.transform.localRotation = Quaternion.identity;
+        return newObject;
     }
 
     public GameObject SpawnTorch()
     {
-        return SpawnGameObject(torchPrefab, 10);
+        return SpawnGameObject(torchPrefab, -0.2f);
     }
     public void SpawnObstacle()
     {
-        SpawnGameObject(obstaclePrefabs[Random.Range(0, obstaclePrefabs.Length)], 1);
+        SpawnGameObject(obstaclePrefabs[Random.Range(0, obstaclePrefabs.Length)], 0.1f);
     }
 }
