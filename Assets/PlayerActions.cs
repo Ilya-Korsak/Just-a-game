@@ -15,7 +15,7 @@ public class PlayerActions : MonoBehaviour
         while (delayTeime < actionDuration)
         {
             delayTeime += Time.deltaTime;
-            actionParticleSystem.transform.LookAt(lookTo);
+            actionParticleSystem.transform.LookAt(lookTo.position);
             yield return new WaitForEndOfFrame();
         }
         actionParticleSystem.Stop();
