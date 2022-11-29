@@ -1,89 +1,41 @@
 {
-    "m_SelectedDeviceId": "5a34db9e",
+    "m_SelectedDeviceId": "YT911000AV",
     "m_SelectedPackage": {
-        "deviceId": "5a34db9e",
-        "name": "korsak.testtask",
-        "processId": 9046,
+        "deviceId": "",
+        "name": "",
+        "processId": 0,
         "exited": false
     },
     "m_SelectedPriority": 0,
     "m_KnownPackagesForSerialization": [
         {
             "deviceId": "YT911000AV",
-            "name": "com.android.launcher3",
-            "processId": 3536,
-            "exited": false
-        },
-        {
-            "deviceId": "YT911000AV",
-            "name": "korsak.testtask",
-            "processId": 3433,
-            "exited": false
-        },
-        {
-            "deviceId": "YT911000AV",
-            "name": "korsak.testtask",
-            "processId": 4886,
-            "exited": false
-        },
-        {
-            "deviceId": "YT911000AV",
-            "name": "korsak.testtask",
-            "processId": 5354,
-            "exited": false
-        },
-        {
-            "deviceId": "YT911000AV",
-            "name": "korsak.testtask",
-            "processId": 5950,
-            "exited": false
-        },
-        {
-            "deviceId": "YT911000AV",
-            "name": "korsak.testtask",
-            "processId": 7311,
-            "exited": false
-        },
-        {
-            "deviceId": "YT911000AV",
-            "name": "korsak.testtask",
-            "processId": 7984,
-            "exited": false
-        },
-        {
-            "deviceId": "YT911000AV",
-            "name": "korsak.testtask",
-            "processId": 8301,
-            "exited": false
-        },
-        {
-            "deviceId": "YT911000AV",
-            "name": "korsak.testtask",
-            "processId": 8802,
-            "exited": false
-        },
-        {
-            "deviceId": "YT911000AV",
             "name": "korsak.testtask",
             "processId": 9906,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "YT911000AV",
             "name": "korsak.testtask",
             "processId": 11090,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "YT911000AV",
             "name": "korsak.testtask",
             "processId": 10000,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "YT911000AV",
             "name": "korsak.testtask",
             "processId": 9973,
+            "exited": true
+        },
+        {
+            "deviceId": "YT911000AV",
+            "name": "com.android.settings",
+            "processId": 14354,
             "exited": false
         },
         {
