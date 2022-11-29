@@ -31,6 +31,7 @@ public class SphereCharacterController : MonoBehaviour
     }
     public void OnMove(InputAction.CallbackContext context)
     {
+        Debug.Log("CHECK");
         inputVector = context.ReadValue<Vector2>();
         inputSpeedMultipler = GetSpeedMultipler();
         //ADD FORCE WAS SOO FUN :C rb.AddForce(new Vector3(inputVector.x, 0, inputVector.y)*5, ForceMode.Acceleration);

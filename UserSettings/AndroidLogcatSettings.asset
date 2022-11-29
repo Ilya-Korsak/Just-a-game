@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "5a34db9e",
         "name": "korsak.testtask",
-        "processId": 31423,
+        "processId": 9046,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -126,6 +126,18 @@
             "deviceId": "5a34db9e",
             "name": "korsak.testtask",
             "processId": 31423,
+            "exited": false
+        },
+        {
+            "deviceId": "5a34db9e",
+            "name": "korsak.testtask",
+            "processId": 31422,
+            "exited": false
+        },
+        {
+            "deviceId": "5a34db9e",
+            "name": "korsak.testtask",
+            "processId": 9046,
             "exited": false
         }
     ],
