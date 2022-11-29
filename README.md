@@ -1,2 +1,1 @@
-# Estoty-task
-Test task for Estoty
+Just a game 
