@@ -21,10 +21,7 @@ public class TouchController : MonoBehaviour
 
             if (isTouched && !joystick.gameObject.activeSelf)
         {
-            if (inputVector.y < Screen.resolutions[0].height-10)
-            {
                 joystick.gameObject.SetActive(true);
-            }
 
             }
             else if (!isTouched && joystick.gameObject.activeSelf)
