@@ -6,6 +6,7 @@ public class TorchTrigger : MonoBehaviour
 {
     [SerializeField] private Transform objectToLookAt;
     [SerializeField] private Animator animator;
+    [SerializeField] private TorchElement torchElement;
     private bool isOnFire = false;
     void OnTriggerEnter(Collider collider)
     {
@@ -16,6 +17,7 @@ public class TorchTrigger : MonoBehaviour
             {
                 animator.SetTrigger("isActivating");
                 isOnFire = true;
+                torchElement.OnTrigerred();
             }
         }
     }
