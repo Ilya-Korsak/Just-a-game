@@ -18,14 +18,18 @@ public class TouchController : MonoBehaviour
     public void OnPress(InputAction.CallbackContext context)
     {
         bool isTouched = context.ReadValueAsButton();
-        if (isTouched && !joystick.gameObject.activeSelf)
-        {
-            joystick.gameObject.SetActive(true);
 
-        }
-        else if(!isTouched && joystick.gameObject.activeSelf)
+            if (isTouched && !joystick.gameObject.activeSelf)
         {
-            joystick.gameObject.SetActive(false);
-        }
+            if (inputVector.y < Screen.resolutions[0].height-300)
+            {
+                joystick.gameObject.SetActive(true);
+            }
+
+            }
+            else if (!isTouched && joystick.gameObject.activeSelf)
+            {
+                joystick.gameObject.SetActive(false);
+            }
     }
 }
