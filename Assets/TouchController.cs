@@ -10,14 +10,14 @@ public class TouchController : MonoBehaviour
     public void OnPoint(InputAction.CallbackContext context)
     {
         inputVector = context.ReadValue<Vector2>();
-        if (!joystick.gameObject.activeSelf)
+        /*if (!joystick.gameObject.activeSelf)
         {
-            joystick.position = inputVector;
-        }
+            //joystick.position = inputVector;
+        }*/
     }
     public void OnPress(InputAction.CallbackContext context)
     {
-        bool isTouched = context.ReadValueAsButton();
+      /*  bool isTouched = context.ReadValueAsButton();
 
             if (isTouched && !joystick.gameObject.activeSelf)
         {
@@ -27,6 +27,6 @@ public class TouchController : MonoBehaviour
             else if (!isTouched && joystick.gameObject.activeSelf)
             {
                 joystick.gameObject.SetActive(false);
-            }
+            }*/
     }
 }
