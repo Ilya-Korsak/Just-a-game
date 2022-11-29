@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        if (torchCount < levelObjectSpawner.Length)
+        if (torchCount > levelObjectSpawner.Length)
         {
             Debug.LogError("Spawners count should be more than TorchCount");
             throw new Exception();
